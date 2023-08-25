@@ -33,24 +33,22 @@ const items = document.getElementsByClassName("item");
 let i = 0;
 
 buttonDx.addEventListener("click", () => {
-//   for (let i = 0; i < items.length; i++) {
-    // if(i < items.length && items[i].classList.contains('active')){
         items[i].classList.remove("active");
         i++;
+        if(i >= items.length){
+            i = 0;
+        }
         items[i].classList.add("active");
-    // } 
-//   }
 });
 
 
 buttonSx.addEventListener("click", () => {
-//   for (let i = 0; i < items.length; i++) {
-    // if(items[i].classList.contains('active')){
         items[i].classList.remove("active");
         i--;
+        if(i < 0){
+            i = items.length - 1;
+        }
         items[i].classList.add("active");
-    // }
-//   }
 });
 
 
