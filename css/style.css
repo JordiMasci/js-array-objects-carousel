@@ -1,0 +1,11 @@
+#firstContainer {
+    width: 70%;
+    height: 800px;
+    background-color: aquamarine;
+}
+
+#secondContainer {
+    width: 30%;
+    height: 800px;
+    background-color: blueviolet;
+}
